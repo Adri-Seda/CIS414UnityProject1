@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/*
+ Adriana Seda Pagan
+ CIS 414
+ Feb 2025
+*/
 public class CanvasNav : MonoBehaviour
 {
-    public void LoadNextScene(int aIDX)
+
+    public void LoadNextScene()
     {
-        SceneManager.LoadScene(aIDX);
+        GameMannager.Instance.NextScene();
     }
 
     public void LoadStartScreen()
     {
-        LoadNextScene(0);
+        GameMannager.Instance.StartScene();
     }
 }
